@@ -18,10 +18,7 @@ jobs:
       
       - name: Terraform Init
         id: init
-        run: |
-          terraform init
-          pwd
-          ls -R
+        run: terraform init
         
       - name: Terraform Validate
         id: validate
